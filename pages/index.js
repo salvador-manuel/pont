@@ -17,7 +17,7 @@ export default function Home() {
                     zIndex: 2,
                     left: '0',
                     right: '0',
-                    bottom: '25%',
+                    bottom: '15%',
                     margin: 'auto',
                     width: '120px',
                     height: '120px',
@@ -29,20 +29,20 @@ export default function Home() {
                 <Image src={Recurso} width="120px" height="120px" />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div
-                    style={{
+                <Box
+                    sx={{
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        height: '30px',
+                        height: { xs: '60px', md: '30px' },
                         width: '100%',
                         background: 'black',
                     }}
                 >
-                    <Typography sx={{ color: '#fff' }}>
+                    <Typography sx={{ color: '#fff', textAlign: 'center' }}>
                         Dona con criptomonedas y recibi el NFT para hacer seguimiento de tu donación
                     </Typography>
-                </div>
+                </Box>
                 <div style={{ display: 'flex' }}>
                     <div
                         style={{
@@ -55,7 +55,7 @@ export default function Home() {
                         }}
                     >
                         <div style={{ padding: '40px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                            <Typography variant="h3">QUIERO RECAUDAR FONDOS</Typography>
+                            <Typography variant="h3">QUIERO RECAUDAR FONDOS EN TODO EL MUNDO</Typography>
                             <Typography>
                                 Todas las fundaciones que solicitan donaciones en nuestra plataforma PONT pasan por un proceso de
                                 verificación previamente, donde deberan presentar un proyecto concreto y trayectoria real o una

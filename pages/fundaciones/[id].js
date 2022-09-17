@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { Box, Button, Icon, LinearProgress, Typography, Avatar } from '@mui/material';
+import { Box, Button, Icon, LinearProgress, Typography, Avatar, Divider } from '@mui/material';
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import Image from 'next/image';
 import CauseCard from '../../components/CauseCard';
@@ -17,16 +17,17 @@ export default function Profile() {
                     objectPosition="top"
                 />
             </Box>
-            <Box sx={{ display: 'flex', flexGrow: '1' }}>
+            <Box sx={{ display: 'flex', flexGrow: '1', flexDirection: { xs: 'column', md: 'row' } }}>
                 <Box
                     sx={{
-                        width: '27vw',
+                        width: { xs: '100vw', md: '27vw' },
                         padding: '40px',
                         paddingTop: '80px',
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'space-around',
                         position: 'relative',
+                        height: { xs: '500px', md: 'unset' },
                         maxHeight: '550px',
                     }}
                 >
@@ -44,7 +45,14 @@ export default function Profile() {
                         src="https://i.imgur.com/TgR3k6k.png"
                     />
                     <Box>
-                        <Typography sx={{ marginBottom: '8px' }}>Fundacion Wichi</Typography>
+                        <Typography
+                            sx={{
+                                marginBottom: '8px',
+                            }}
+                            variant="h5"
+                        >
+                            Fundacion Wichi
+                        </Typography>
                         <Typography>@fundacionwichi</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
@@ -97,6 +105,7 @@ export default function Profile() {
                         </Box>
                     </Box>
                 </Box>
+                <Divider sx={{ display: { xs: 'block', md: 'none' } }} />
                 <Box sx={{ padding: '40px' }}>
                     <Typography>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -130,7 +139,7 @@ const data = [
         subtitle: 'Septiembre 17, 2022',
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6UU--9Nq4qmRpshpt4GmrzG0Vw9PX6rv_cA&usqp=CAU',
         seguimiento: false,
-        title: 'Campamento infantil',
+        title: 'Comedor infantil',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
         content:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.',

@@ -15,7 +15,7 @@ export default function index() {
                 </ul>
             </div>
             <div>
-                <p>Conectate con la DAO</p>
+                <p style={{ marginBottom: '4px' }}>Conectate con la DAO</p>
                 <Button variant="contained" sx={{ background: '#72E744' }}>
                     Ir a la DAO
                 </Button>
@@ -23,9 +23,13 @@ export default function index() {
 
             <div>
                 <p style={{ fontWeight: 'bold', marginTop: '40px', marginBottom: '4px' }}>
-                    Si no sabes como, conectate con soporte técnico
+                    Si no sabes como funciona una DAO, contactate con soporte técnico
                 </p>
-                <Link href="/form">Hace click aqui</Link>
+                <Link href="/form">
+                    <a>
+                        <Button variant="contained">SOPORTE</Button>
+                    </a>
+                </Link>
             </div>
         </div>
     );

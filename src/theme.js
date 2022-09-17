@@ -10,14 +10,8 @@ const theme = createTheme({
         secondary: {
             main: '#19857b',
         },
-        /* background: {
-            default: '#282929',
-        }, */
         error: {
             main: red.A400,
-        },
-        input: {
-            main: 'white',
         },
     },
 });

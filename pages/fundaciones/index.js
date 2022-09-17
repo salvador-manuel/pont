@@ -16,17 +16,18 @@ export default function Fundaciones() {
                 }}
             >
                 <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
-                    <Box>
+                    <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                         <Image src={Recurso} width="200px" height="200px" />
                     </Box>
-                    <Box>
-                        <Typography sx={{ textAlign: 'right', fontWeight: 'bold', color: 'white' }} variant="h2">
+                    <Box sx={{ color: 'white', textAlign: { md: 'right', xs: 'center' } }}>
+                        <Typography sx={{ fontWeight: 'bold' }} variant="h2">
                             CONOCE LAS FUNDACIONES
                         </Typography>
-                        <Typography sx={{ textAlign: 'right', color: 'white' }} variant="h3">
-                            que necesitan de tu ayuda
-                        </Typography>
-                        <Typography sx={{ width: '70vw', textAlign: 'right', marginLeft: 'auto' }} variant="h6">
+                        <Typography variant="h3">que necesitan de tu ayuda</Typography>
+                        <Typography
+                            sx={{ width: '70vw', marginLeft: { xs: 'unset', md: 'auto' }, marginX: { xs: 'auto', md: 'unset' } }}
+                            variant="h6"
+                        >
                             Tu aporte de $1 USDC, es equivalente a 1 plato de comida. Explora las diferentes fundaciones y
                             adentrate en sus causas, podras visitar sus perfiles y formar parte de un cambio con herramientas
                             tecnologicas.

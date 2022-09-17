@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, TextField, Paper } from '@mui/material';
+import { Box, Button, TextField, Paper, Typography } from '@mui/material';
 
 export default function Form() {
     return (
@@ -18,6 +18,9 @@ export default function Form() {
                 elevation={3}
             >
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <Typography sx={{ fontWeight: 'bold', textAlign: 'center', marginBottom: '16px' }} variant="h5">
+                        SOPORTE
+                    </Typography>
                     <label style={{ color: 'black', marginBottom: '8px' }}>Nombre y apellido</label>
                     <input
                         style={{

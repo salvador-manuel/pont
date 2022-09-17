@@ -73,9 +73,10 @@ const NavBar = () => {
                             onClick={handleOpenNavMenu}
                             color="inherit"
                         >
-                            <MenuIcon />
+                            <MenuIcon sx={{ color: 'black' }} />
                         </IconButton>
                         <Menu
+                            disableScrollLock={true}
                             id="menu-appbar"
                             anchorEl={anchorElNav}
                             anchorOrigin={{
