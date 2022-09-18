@@ -3,9 +3,11 @@ import { Box, Button, Icon, LinearProgress, Typography, Avatar, Divider } from '
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import Image from 'next/image';
 import CauseCard from '../../components/CauseCard';
+import { useState } from 'react';
 
 export default function Profile() {
     const router = useRouter();
+    const [datos, setDatos] = useState(data);
 
     return (
         <div style={{ background: 'white', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -113,7 +115,7 @@ export default function Profile() {
                         ea commodo consequat.
                     </Typography>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px' }}>
-                        {data.map((item, index) => (
+                        {datos.map((item, index) => (
                             <CauseCard
                                 avatar={item.avatar}
                                 title={item.title}

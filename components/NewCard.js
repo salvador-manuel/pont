@@ -58,12 +58,10 @@ export default function NewCard({ avatar, title, subtitle, image, content, causa
             />
             <CardMedia component="img" height="194" image={image} alt="Paella dish" />
             <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '8px', paddingRight: '12px' }}>
-                <Link href="/fundaciones/01">
-                    <a>
-                        <Button variant="contained" sx={{ background: '#72E744', marginLeft: 'auto' }}>
-                            Visitar perfil
-                        </Button>
-                    </a>
+                <Link href="/fundaciones/01" style={{ textDecoration: 'none' }}>
+                    <Button variant="contained" sx={{ background: '#72E744', marginLeft: 'auto' }}>
+                        Visitar perfil
+                    </Button>
                 </Link>
             </div>
             <CardContent>

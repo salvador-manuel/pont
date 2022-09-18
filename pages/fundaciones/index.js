@@ -5,6 +5,8 @@ import Recurso from '../../public/RECURSO.png';
 import NewCard from '../../components/NewCard';
 
 export default function Fundaciones() {
+    const [datos, setDatos] = useState(data);
+
     return (
         <>
             <Box
@@ -46,7 +48,7 @@ export default function Fundaciones() {
                     alignItems={{ xs: 'center', md: 'start' }}
                     gap={{ xs: '20px' }}
                 >
-                    {data.map((item, index) => (
+                    {datos.map((item, index) => (
                         <NewCard
                             avatar={item.avatar}
                             title={item.title}

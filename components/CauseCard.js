@@ -65,19 +65,17 @@ export default function CauseCard({ avatar, title, subtitle, image, content, ind
             <CardMedia component="img" height="194" image={image} alt="Paella dish" />
             <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '8px', padding: '0px 12px' }}>
                 <div onClick={handleOpen}>
-                    <Button variant="contained" disabled sx={{ background: '#72E744' }}>
-                        <Link href="/">
-                            <a style={{ color: 'black' }}>Seguimiento</a>
-                        </Link>
-                    </Button>
+                    <Link href="/#" style={{ textDecoration: 'none', color: 'black' }}>
+                        <Button variant="contained" disabled sx={{ background: '#72E744' }}>
+                            Seguimiento
+                        </Button>
+                    </Link>
                 </div>
                 <div>
-                    <Link href="#">
-                        <a>
-                            <Button variant="contained" sx={{ background: '#72E744' }}>
-                                Donar
-                            </Button>
-                        </a>
+                    <Link href="#" style={{ textDecoration: 'none' }}>
+                        <Button variant="contained" sx={{ background: '#72E744' }}>
+                            Donar
+                        </Button>
                     </Link>
                 </div>
             </div>

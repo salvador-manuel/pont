@@ -25,10 +25,8 @@ export default function index() {
                 <p style={{ fontWeight: 'bold', marginTop: '40px', marginBottom: '4px' }}>
                     Si no sabes como funciona una DAO, contactate con soporte técnico
                 </p>
-                <Link href="/form">
-                    <a>
-                        <Button variant="contained">SOPORTE</Button>
-                    </a>
+                <Link href="/form" style={{ textDecoration: 'none' }}>
+                    <Button variant="contained">SOPORTE</Button>
                 </Link>
             </div>
         </div>

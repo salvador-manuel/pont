@@ -64,7 +64,7 @@ const NavBar = () => {
                         </a>
                     </Link>
 
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                    <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
                             aria-label="account of current user"
@@ -132,7 +132,7 @@ const NavBar = () => {
                         ))}
                     </Box>
 
-                    <Box sx={{ flexGrow: 0 }}>
+                    <Box sx={{ flexGrow: 0, marginLeft: 'auto' }}>
                         <ConnectButton label="Conectar Wallet" />
                         <Menu
                             sx={{ mt: '45px' }}
